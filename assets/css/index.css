@@ -20,11 +20,11 @@
   width: 5px; /* Lebar scrollbar */
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #011e58; /* Warna track scrollbar */
+  background:  linear-gradient(to right, rgb(9, 0, 255) , rgb(0, 225, 255)); /* Warna track scrollbar */
   border-radius: 5px;
-}
+}    
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #03005c; /* Warna thumb scrollbar */
+  background: #f5f5f5; /* Warna thumb scrollbar */
   border-radius: 5px; /* Bulatkan tepi thumb */
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
