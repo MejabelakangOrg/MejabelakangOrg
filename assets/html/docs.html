@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script/js/index.js"></script>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+  </head>
+  <body class="dark:bg-slate-900 "> 
+    <div class="herosection">
+      <header class="sticky duration-1000 inset-x-0 top-0 z-50">
+        <nav class="flex items-center backdrop-blur border-b border-slate-700 lg:border-justify-between supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75 fixed top-0 w-full">
+          <div class="container mx-auto px-4 md:flex items-center gap-6">
+            <!-- Logo -->
+            <div class="flex items-center justify-between w-full">
+              <a href="#" class="flex items-center py-5 px-2 text-white flex-1">
+                <span class="font-bold">logo/nama apa ye?</span>
+              </a>
+              <!-- Mobile Menu Button -->
+              <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <title>bars-3-bottom-left</title>
+                    <g fill="none">
+                      <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- Primary Navigation -->
+            <div class="hidden md:flex md:flex-row flex-col items-center md:space-x-1 navigation-menu pb-3 md:pb-0 navigation-menu">
+              <a href="/index.html" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">Home</a>
+              <a href="#about-section" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">About</a>
+              <a href="/assets/html/docs.html" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">docs</a>
+              <a href="#" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">tutorials</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="relative isolate px-6 py-0 lg:pt-14 pt-40 lg:px-8 hero-content w-full">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+          ></div>
+        </div>
+        <div class="mx-auto max-w-2xl sm:py-32 lg:py-[170px]">
+          <div class="text-center text-white">
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">lorem ipsum</h1>
+            <p class="mt-6 text-lg leading-8 text-white">Website ini dibuat oleh saya dan anca bertujuan untuk membantu teman teman yang sedang mempelajari debian linux server</p>
+            <!-- search bar -->
+            <div class="mt-10 flex items-center justify-center gap-x-6 pb-10">
+              <div class="form-container">
+                <form class="form">
+                  <input id="search" type="text" class="input rounded-full text-center dark:bg-slate-900 lg:px-20 py-1 ring-1" placeholder="search..." />
+                </form>
+              </div>
+              <div class="results-container">
+                <ul class="results-list" id="list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+            <h2 class="text-2xl font-bold text-white">Ayo belajar</h2>
+            <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                <div class="group relative">
+                  <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img src="/assets/img/6_pinguins.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="h-full w-full object-cover object-center" />
+                  </div>
+                  <h3 class="mt-6 text-sm text-white">
+                    <a href="tutor/exm_tutor.html">
+                      <span class="absolute inset-0"></span>
+                      just test
+                    </a>
+                  </h3>
+                  <p class="text-base font-semibold text-white">just test</p>
+                </div>
+                <div class="group relative">
+                  <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img src="/assets/img/6_pinguins.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="h-full w-full object-cover object-center" />
+                  </div>
+                  <h3 class="mt-6 text-sm text-white">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      just test
+                    </a>
+                  </h3>
+                  <p class="text-base font-semibold text-white">just test</p>
+                </div>
+                <div class="group relative">
+                  <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img src="/assets/img/6_pinguins.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="h-full w-full object-cover object-center" />
+                  </div>
+                  <h3 class="mt-6 text-sm text-white">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      just test
+                    </a>
+                  </h3>
+                  <p class="text-base font-semibold text-white">just test</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
