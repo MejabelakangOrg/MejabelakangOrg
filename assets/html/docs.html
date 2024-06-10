@@ -46,19 +46,16 @@
           ></div>
         </div>
         <div class="mx-auto max-w-2xl sm:py-32 lg:py-[170px]">
-          <div class="text-center text-white">
+          <div class="text-center text-white pb-10">
             <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">lorem ipsum</h1>
             <p class="mt-6 text-lg leading-8 text-white">Website ini dibuat oleh saya dan anca bertujuan untuk membantu teman teman yang sedang mempelajari debian linux server</p>
             <!-- search bar -->
-            <div class="mt-10 flex items-center justify-center gap-x-6 pb-10">
-              <div class="form-container">
-                <form class="form">
-                  <input id="search" type="text" class="input rounded-full text-center dark:bg-slate-900 lg:px-20 py-1 ring-1" placeholder="search..." />
-                </form>
-              </div>
-              <div class="results-container">
-                <ul class="results-list" id="list"></ul>
-              </div>
+          </div>
+          <div class="relative mx-auto text-black" style="width: 200px">
+            <input class="border-2 bg-slate-900 h-10 px-5 rounded-lg text-sm w-full text-white text-center " type="search" name="search" placeholder="Search" id="autocomplete-input" />
+            <!-- Container untuk menampilkan hasil autocomplete -->
+            <div id="autocomplete-results" class="absolute z-10 left-0 top-full w-full  bg-slate-900 mt-1 rounded-lg shadow-lg hidden">
+              <!-- Hasil autocomplete akan diisi di sini -->
             </div>
           </div>
         </div>
