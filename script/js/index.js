@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const searchItems = [
     { name: "Dns Server", url: "/assets/html/DNS_TUTOR.html" },
-    { name: "Test", url: "https://example.com/about" },
-    { name: "Test", url: "https://example.com/contact" },
+    { name: "Terminal customuzation", url: "/assets/html/custom_terminal_tutor.html" },
+    { name: "Instalasi Debian Server", url: "/assets/html/install_debian_tutor.html" },
     // Tambahkan lebih banyak item sesuai kebutuhan
   ];
 
