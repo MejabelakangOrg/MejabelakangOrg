@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/script/js/index.js"></script>
+    <script src="https://mejabelakangorg.github.io/MejabelakangOrg/script/js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/image.png" />
     <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
-  <body class="dark:bg-slate-900">
+  <body class="bg-slate-900">
     <div class="herosection">
-      <header class="sticky duration-1000 absolute inset-x-0 top-0 z-50">
-        <nav class="flex items-center backdrop-blur justify-between supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75 fixed top-0 w-full">
+      <header class="sticky duration-1000 inset-x-0 top-0 z-50">
+        <nav class="flex items-center backdrop-blur justify-between supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75 top-0 w-full">
           <div class="container mx-auto px-4 md:flex items-center gap-6">
             <!-- Logo -->
             <div class="flex items-center justify-between w-full">
               <a href="#" class="flex items-center py-5 px-2 text-white flex-1">
-                <span class="font-bold">logo/nama apa ye?</span>
+                <img src="https://mejabelakangorg.github.io/MejabelakangOrg/assets/img/image.png" class="h-[50px] w-auto mx-4 rounded-full" alt="" />
+                <span class="font-bold">Meja Belakang Organization</span>
               </a>
               <!-- Mobile Menu Button -->
               <div class="md:hidden flex items-center">
                 <button class="mobile-menu-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-cyan-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                   </svg>
                 </button>
@@ -28,45 +30,25 @@
             </div>
             <!-- Primary Navigation -->
             <div class="hidden md:flex md:flex-row flex-col items-center md:space-x-1 navigation-menu pb-3 md:pb-0 navigation-menu">
-              <a href="#" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">Home</a>
-              <a href="#about-section" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">About</a>
+              <a href="/index.html" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">Home</a>
+              <a href="/index.html#about-section" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">About</a>
               <a href="/assets/html/docs.html" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">docs</a>
               <a href="#" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">tutorials</a>
             </div>
           </div>
+          <!-- <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div
+              class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+              style="
+                clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);
+              "
+            ></div>
+          </div> -->
         </nav>
       </header>
-      <div class="relative isolate px-6 py-0 pt-14 lg:px-8 hero-content w-full">
-        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-          <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-          ></div>
-        </div>
-        <div class="mx-auto max-w-2xl sm:py-32 lg:py-[170px]">
-          <div class="text-center text-white">
-            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">lorem ipsum</h1>
-            <p class="mt-6 text-lg leading-8 text-white">Website ini dibuat oleh saya dan anca bertujuan untuk membantu teman teman yang sedang mempelajari debian linux server</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-              <div class="form-container">
-                <form class="form">
-                  <input id="search" type="text" class="input" placeholder="search..." />
-                  <button id="clear" class="clear-results">clear</button>
-                </form>
-              </div>
-              <div class="results-container">
-                <ul class="results-list" id="list"></ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-          ></div>
-        </div>
-      </div>
+    </div>
+    <div class=" lg:pt-[30vh] w-full flex justify-center items-center">
+      <h1 class="text-white text-[10vh] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Masi Di buat cees</h1>
     </div>
   </body>
 </html>
