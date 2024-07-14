@@ -1,0 +1,22 @@
+# robots.txt for example.com
+
+# User-agent: * -> berlaku untuk semua crawlers
+User-agent: *
+
+# Disallow: /private/ -> melarang akses ke direktori /private/
+Disallow: /
+Disallow: /script/
+Disallow: /assets/img/
+Disallow: /assets/test/
+Disallow: /tailwind.config.js
+Disallow: /sitemap.xml/
+
+# Disallow: /temp/ -> melarang akses ke direktori /temp/
+Disallow: /temp/
+
+# Allow: /public/ -> mengizinkan akses ke direktori /public/
+Allow: /assets/html/
+allow: /index.html
+
+# Sitemap: URL ke file sitemap Anda
+Sitemap: https://mejabelakang-org.vercel.app/sitemap.xml
