@@ -9,7 +9,7 @@ Disallow: /script/
 Disallow: /assets/img/
 Disallow: /assets/test/
 Disallow: /tailwind.config.js
-Disallow: /sitemap.xml/
+Disallow: /sitemap.xml
 
 # Disallow: /temp/ -> melarang akses ke direktori /temp/
 Disallow: /temp/
