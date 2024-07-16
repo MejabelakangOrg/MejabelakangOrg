@@ -5,12 +5,12 @@ User-agent: *
 
 # Disallow: /private/ -> melarang akses ke direktori /private/
 Disallow: /
-Disallow: /script/
+Disallow: /script/js/index.js
 Disallow: /assets/img/
 Disallow: /assets/test/
 Disallow: /tailwind.config.js
 Disallow: /sitemap.xml
-
+Disallow: /tailwind/
 # Disallow: /temp/ -> melarang akses ke direktori /temp/
 Disallow: /temp/
 

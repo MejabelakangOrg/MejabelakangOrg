@@ -36,14 +36,6 @@
               <a href="#" class="py-2 px-3 block text-white hover:bg-blue-800 rounded-lg">tutorials</a>
             </div>
           </div>
-          <!-- <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-            <div
-              class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-              style="
-                clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);
-              "
-            ></div>
-          </div> -->
         </nav>
       </header>
       <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -100,9 +92,7 @@
                 <p class="mt-8">Lalu kita akan langsung ke tutorial nya. ini adalah langkah langkah membuat Dns server di debian :1.Config Ip Address > 2.Install Bind9 Services > 3.Config Bind9 Services > 4.Test Form Client</p>
                 <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">Menggunakan virtual Mechine.</h2>
                 <p class="mt-6 pb-10">disini Saya Menggunakan software Oracle Virtual Box, dalam VBOX saya sudah terinstall Debian 10, Dengan configurasi settingan Virtual box Adapter:Host-only, system/bootloader:Hardik paling Atas ya</p>
-                <!-- <div class="custom-scrollbar -ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1  overflow-auto touch-auto">
-                  <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] rounded-lg" src="https://mejabelakangorg.github.io/MejabelakangOrg/assets/img/VMBOX_cpy.png" alt="named.conf.default-zone" />
-                </div> -->
+
                 <div class="-ml-12 -mt-12 p-12 lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Virtualbox_logo.jpg" alt="" />
                 </div>
@@ -112,19 +102,23 @@
                   <img src="/assets/img/Kelompok dns/ssbaru.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
                   <p class="italic text-sm">mw custom terminal windowss kyk gini? klik ><a href="" class="font-bold">Custumize Windows Terminal</a></p>
                 </div>
-                <p class="">Ini sebuah langkah penting, jadi jangan sampai salah, ketikkan perintah <span class="italic font-semibold"> nano /etc/network/interfaces.</span> seperti pada gambar ini. lalu dibawah Primary Network, tambahkan baris seperti pada gambar, <span class="italic font-semibold">enp0s3</span> untuk adapter 1, <span class="italic font-semibold">enp0s8(opsional)</span> untuk adapter 2 <span class="italic font-semibold">(yang di maksud adapter itu adapter di virtual box nya yaa)</span> untuk ip/address nya kalian bisa ganti sesukahati yang penting netmask nya sesuai</p>
+                <p class="">
+                  Ini sebuah langkah penting, jadi jangan sampai salah, ketikkan perintah <span class="italic font-semibold"> nano /etc/network/interfaces.</span> seperti pada gambar ini. lalu dibawah Primary Network, tambahkan baris
+                  seperti pada gambar, <span class="italic font-semibold">enp0s3</span> untuk adapter 1, <span class="italic font-semibold">enp0s8(opsional)</span> untuk adapter 2
+                  <span class="italic font-semibold">(yang di maksud adapter itu adapter di virtual box nya yaa)</span> untuk ip/address nya kalian bisa ganti sesukahati yang penting netmask nya sesuai
+                </p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/ssNetworkINter.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
                   <p class="italic text-sm">Btw ini yang udah di config yaa</p>
                 </div>
                 <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">2. install bind9 services</h2>
-                <p class=""> kita install services bind9 nya dengan command <span class="italic font-semibold">apt install bind9</span></p>
+                <p class="">kita install services bind9 nya dengan command <span class="italic font-semibold">apt install bind9</span></p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/bind9DNE.jpg" alt="" class="h-[190px] w-auto overflow-hidden rounded-md" />
                   <p class="italic text-sm">Ini tampilan ketika kalian sudah memiliki service bind9, jika belum nanti akan ada opsi "y/n" kalian tekan y</p>
                 </div>
                 <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">3. config bind9 services</h2>
-                <p class="">kita masuk ke directory bind9 dengan cara  <span class="italic font-semibold">cd /etc/bind</span> lalu kita copy file bernama db.127 dab db.local dan rubah namanya seperti gambaar ini</p>
+                <p class="">kita masuk ke directory bind9 dengan cara <span class="italic font-semibold">cd /etc/bind</span> lalu kita copy file bernama db.127 dab db.local dan rubah namanya seperti gambaar ini</p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/comand.jpg" alt="" class="h-[200px] w-auto overflow-hidden rounded-md" />
                   <p class="italic text-sm">typo dikit:V</p>
@@ -132,31 +126,51 @@
                 <p class="">setelah itu kita configurasi terlebih dahulu db.(ip_oktet_pertama_kalian) disini karna ip oktet pertama saya itu 173 maka comand nya adalah <span class="italic font-semibold">nano db.173</span></p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/db.ip.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Btw ganti <span  class="italic font-semibold">edwardrafael.com dengan domain kalian ya</span> YELLOW = wajib ganti, RED = opsional</p>
+                  <p class="italic text-sm">Btw ganti <span class="italic font-semibold">edwardrafael.com dengan domain kalian ya</span> YELLOW = wajib ganti, RED = opsional</p>
                 </div>
-                <p class="">setelah itu kita configurasi db.domain yang sudah kalian copy tadi dari db.local, karna db.domain saya itu db.edwardrafael.com, maka comand nya adalah<span class="italic font-semibold">nano db.edwardrafael.com</span></p>
+                <p class="">
+                  setelah itu kita configurasi db.domain yang sudah kalian copy tadi dari db.local, karna db.domain saya itu db.edwardrafael.com, maka comand nya adalah<span class="italic font-semibold">nano db.edwardrafael.com</span>
+                </p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/db.exampledomain.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                 <p class="italic text-sm">Btw ganti <span  class="italic font-semibold">edwardrafael.com dan ipnya dengan domain dan ip kalian ya</span> YELLOW = wajib ganti, RED = opsional</p>
+                  <p class="italic text-sm">Btw ganti <span class="italic font-semibold">edwardrafael.com dan ipnya dengan domain dan ip kalian ya</span> YELLOW = wajib ganti, RED = opsional</p>
                 </div>
                 <p class="">setelah itu kita configurasi named.conf.default-zone nya dengan command <span class="italic font-semibold">nano named.conf.default-zones</span></p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/defZONE.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Seperti tadi yellow wajib ganti, ganti domain dan ip nya dengan domain dan ip kalian, btw yang ip musti kebalik ya contoh dari 192.168.22.1 > 1.22.168.192, tapi hanya sampe oktet ke-tiga ajah, "in-addr.arpa" jan di hapus, jadi contoh 22.168.192.in-addr.arpa. Arahin juga bagian "file" nya ke file configurasi db.domain sama db.ip kalian</p>
+                  <p class="italic text-sm">
+                    Seperti tadi yellow wajib ganti, ganti domain dan ip nya dengan domain dan ip kalian, btw yang ip musti kebalik ya contoh dari 192.168.22.1 > 1.22.168.192, tapi hanya sampe oktet ke-tiga ajah, "in-addr.arpa" jan di
+                    hapus, jadi contoh 22.168.192.in-addr.arpa. Arahin juga bagian "file" nya ke file configurasi db.domain sama db.ip kalian
+                  </p>
                 </div>
                 <p class="">setelah itu kita restart Network sama bind9 services nya dengan command <span class="italic font-semibold">systemctl restart networking bind9</span></p>
                 <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">4. test from client (windows localhost/laptop kita)</h2>
-                <p class="">caranya adalah, kita buat laptop kita dengan debian serevr saling terhubung/satu network, pertama kita masuk <span class="italic font-semibold">CONTROL PANEL > NETWORK AND INTERNET > NETWORK AND SHARING CENTER > CHANGE ADAPTER SETTING > VIRTUALBOX HOST-ONLY-ETHERNET > PROPERTIES > INTERNET PROTOCOL VERSION 4 (TCP/IPV4) PROPERTIES</span></p>
+                <p class="">
+                  caranya adalah, kita buat laptop kita dengan debian serevr saling terhubung/satu network, pertama kita masuk
+                  <span class="italic font-semibold"
+                    >CONTROL PANEL > NETWORK AND INTERNET > NETWORK AND SHARING CENTER > CHANGE ADAPTER SETTING > VIRTUALBOX HOST-ONLY-ETHERNET > PROPERTIES > INTERNET PROTOCOL VERSION 4 (TCP/IPV4) PROPERTIES</span
+                  >
+                </p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/control panel.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Di bagian ip address isi address dengan network yang sama dengan debian server jika debian 192.168.22.1 maka isi ip adddress dengan 192.168.22.2, isi referred DNS server dengan ip debian dns server</p>
+                  <p class="italic text-sm">
+                    Di bagian ip address isi address dengan network yang sama dengan debian server jika debian 192.168.22.1 maka isi ip adddress dengan 192.168.22.2, isi referred DNS server dengan ip debian dns server
+                  </p>
                 </div>
-                <p class="">setelah itu kita test ping dari client untuk menguji apakah windows(laptop kita) terhubung dengan client untuk test ping kita buka cmd, lalu masukan command<span class="italic font-semibold">ping (ip target/ip debian server)</span> jika sudah terhubung akan seperti ini :</p>
+                <p class="">
+                  setelah itu kita test ping dari client untuk menguji apakah windows(laptop kita) terhubung dengan client untuk test ping kita buka cmd, lalu masukan command<span class="italic font-semibold"
+                    >ping (ip target/ip debian server)</span
+                  >
+                  jika sudah terhubung akan seperti ini :
+                </p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/testPING.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
                   <p class="italic text-sm">Yey berhasil :3</p>
                 </div>
-                <p class="">setelah test ping dan terbukti berhasil, selanjut nya kita akan menguji apakah dns server kita telah berhasil terconfigurasi dengan bail, comandnya dengan menggunakan <span class="italic font-semibold">nslookup (contohdomain.com/ip address server debian)</span></p>
+                <p class="">
+                  setelah test ping dan terbukti berhasil, selanjut nya kita akan menguji apakah dns server kita telah berhasil terconfigurasi dengan bail, comandnya dengan menggunakan
+                  <span class="italic font-semibold">nslookup (contohdomain.com/ip address server debian)</span>
+                </p>
                 <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                   <img src="/assets/img/Kelompok dns/testNSLOOOKUP.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
                   <p class="italic text-sm">Jika sudah seperti ini tanda na sudah berhasil</p>
