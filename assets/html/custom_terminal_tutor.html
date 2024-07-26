@@ -50,17 +50,15 @@
             </div>
           </div>
           <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://mejabelakangorg.github.io/MejabelakangOrg/assets/img/ssnslookup.copy.png" alt="" />
+            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/assets/img/tutor_terminal/0img.png" alt="" />
           </div>
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
-              <div class="max-w-xl text-base leading-7 text-white lg:max-w-lg">
+              <div class="max-w-xl  leading-7 text-white text-xl lg:max-w-lg">
                 <p>
-                  Bayangkan DNS server itu seperti pelayan di restoran. Anda datang dan bilang, “Saya mau Nasi Goreng,” yang mana itu seperti nama domain. Pelayan (DNS server) tahu persis di mana ‘Nasi Goreng’ itu berada di dapur (alamat
-                  IP) dan membawa pesanan Anda ke meja. Jadi, DNS server ini membantu komputer Anda menemukan tempat yang tepat di internet dengan menggunakan nama yang mudah diingat, bukan deretan angka yang sulit dihafal. Berikut adalah
-                  keuntungan menggunakan Dns Server:
+                 wah bosen banget terminal (POWERSHELL) windows gini-gini aja, custumize aja!! <span class="font-semibold">*NOTE KALO POWERSHELL MUNGKIN AKAN TAMPAK BAGUS, TAPI KALO CMD SAYA SENDIRI RAGU AKAN HAL ITU MUNGKIN KALIAN BISA CEK GITHUB:</span> <span class="font-extrabold"><a href="https://github.com/aminbabu/windows-terminal-customization" target="_blank">sini</a></span>
                 </p>
-                <ul role="list" class="mt-8 space-y-8 text-white">
+                <!-- <ul role="list" class="mt-8 space-y-8 text-white">
                   <li class="flex gap-x-3">
                     <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path
@@ -88,93 +86,37 @@
                     </svg>
                     <span><strong class="font-semibold text-white">Menerjemahkan alamat ip.</strong> DNS mengubah nama domain yang mudah diingat (seperti ‘google.com’) menjadi alamat IP numerik yang dibutuhkan untuk koneksi komputer.</span>
                   </li>
-                </ul>
-                <p class="mt-8">Lalu kita akan langsung ke tutorial nya. ini adalah langkah langkah membuat Dns server di debian :1.Config Ip Address > 2.Install Bind9 Services > 3.Config Bind9 Services > 4.Test Form Client</p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">Menggunakan virtual Mechine.</h2>
-                <p class="mt-6 pb-10">disini Saya Menggunakan software Oracle Virtual Box, dalam VBOX saya sudah terinstall Debian 10, Dengan configurasi settingan Virtual box Adapter:Host-only, system/bootloader:Hardik paling Atas ya</p>
+                </ul> -->
+                
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">Gas</h2>
+                <p class="mt-8">pertam kita buka dulu terminal windows nya</p>
+                <p class="mt-1 pb-10">Disebelahkanan gambar <span class=" font-extrabold">+</span> ada dropdown kebawah terus pencet settings/pengaturan</p>
 
                 <div class="-ml-12 -mt-12 p-12 lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Virtualbox_logo.jpg" alt="" />
+                  <img src="/assets/img/tutor_terminal/0img.png" alt="" />
                 </div>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">1. Setting ip Address</h2>
-                <p class="mt-6">Ini sebuah langkah penting, jadi jangan sampai salah, ketikkan perintah <span class="italic font-semibold"> nano /etc/network/interfaces.</span> seperti pada gambar ini</p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/ssbaru.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">mw custom terminal windowss kyk gini? klik ><a href="" class="font-bold">Custumize Windows Terminal</a></p>
+                <!-- <h2 class="mt-10 text-2xl font-bold tracking-tight text-white">1. Setting ip Address</h2> -->
+                <p class="mt-6 mb-6 text-xl">setelah itu masuk ke <span class="italic font-semibold">profiles</span> seperti pada gambar ini, nah disini kalian bebas mau custom terminal yang mana, ada cmd, powershell, dll. tapi disni gw bakal custom yang default aja</p>
+                <div class="-ml-12 -mt-12 p-12  lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
+                  <img src="/assets/img/tutor_terminal/1img.png" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
                 </div>
-                <p class="">
-                  Ini sebuah langkah penting, jadi jangan sampai salah, ketikkan perintah <span class="italic font-semibold"> nano /etc/network/interfaces.</span> seperti pada gambar ini. lalu dibawah Primary Network, tambahkan baris
-                  seperti pada gambar, <span class="italic font-semibold">enp0s3</span> untuk adapter 1, <span class="italic font-semibold">enp0s8(opsional)</span> untuk adapter 2
-                  <span class="italic font-semibold">(yang di maksud adapter itu adapter di virtual box nya yaa)</span> untuk ip/address nya kalian bisa ganti sesukahati yang penting netmask nya sesuai
+                <p class="">buat <span class="font-extrabold">color themes</span> atau kalian bisa copy aja color theme yang ada di internet contoh <a href="https://draculatheme.com/" target="_blank" class="font-bold text-fuchsia-500">dracula theme</a>
+                nah buat tutorial pasang nya ada di<a href="https://zimmergren.net/install-custom-themes-in-windows-terminal/" target="_blank" class="font-bold"> sini</a> ya
                 </p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/ssNetworkINter.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Btw ini yang udah di config yaa</p>
+              
+                <!-- <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">2. install bind9 services</h2> -->
+                <p class="mt-16 ">ini bagian seru nya, kalian bisa bebas nambahin background buat terminal kalian, kalian bisa tambahin gambar nya di <span class="font-semibold">image path > browse > pilih gambar</span> abis itu biarin aja sisanya lanjut ke opacity ini opacity buat gambar background terminal nya saran gw 28%, atau sesuaikan saja sama image nya</p>
+                <div class="-ml-12 mt-10 p-12  lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
+                  <img src="/assets/img/tutor_terminal/2mg.png" alt="" class="h-50 w-auto overflow-hidden rounded-md" />
                 </div>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">2. install bind9 services</h2>
-                <p class="">kita install services bind9 nya dengan command <span class="italic font-semibold">apt install bind9</span></p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/bind9DNE.jpg" alt="" class="h-[190px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Ini tampilan ketika kalian sudah memiliki service bind9, jika belum nanti akan ada opsi "y/n" kalian tekan y</p>
+                <p class="mt-12">terus kalian scroll kebawah buat transparancy saran gw 48% tapi sesuaikan ama background gambar kalian, biar ga terlalu mengganggu nanti</p>
+                
+                <p class="">dan sudah </p>
+                <div class="-ml-12 mt-5 p-12  lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
+                  <img src="/assets/img/tutor_terminal/3img.png" alt="" class="h-[200px] w-auto overflow-hidden rounded-md" />
+                  <!-- <p class="italic text-sm">Btw ganti <span class="italic font-semibold">edwardrafael.com dengan domain kalian ya</span> YELLOW = wajib ganti, RED = opsional</p> -->
                 </div>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">3. config bind9 services</h2>
-                <p class="">kita masuk ke directory bind9 dengan cara <span class="italic font-semibold">cd /etc/bind</span> lalu kita copy file bernama db.127 dab db.local dan rubah namanya seperti gambaar ini</p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/comand.jpg" alt="" class="h-[200px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">typo dikit:V</p>
-                </div>
-                <p class="">setelah itu kita configurasi terlebih dahulu db.(ip_oktet_pertama_kalian) disini karna ip oktet pertama saya itu 173 maka comand nya adalah <span class="italic font-semibold">nano db.173</span></p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/db.ip.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Btw ganti <span class="italic font-semibold">edwardrafael.com dengan domain kalian ya</span> YELLOW = wajib ganti, RED = opsional</p>
-                </div>
-                <p class="">
-                  setelah itu kita configurasi db.domain yang sudah kalian copy tadi dari db.local, karna db.domain saya itu db.edwardrafael.com, maka comand nya adalah<span class="italic font-semibold">nano db.edwardrafael.com</span>
-                </p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/db.exampledomain.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Btw ganti <span class="italic font-semibold">edwardrafael.com dan ipnya dengan domain dan ip kalian ya</span> YELLOW = wajib ganti, RED = opsional</p>
-                </div>
-                <p class="">setelah itu kita configurasi named.conf.default-zone nya dengan command <span class="italic font-semibold">nano named.conf.default-zones</span></p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/defZONE.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">
-                    Seperti tadi yellow wajib ganti, ganti domain dan ip nya dengan domain dan ip kalian, btw yang ip musti kebalik ya contoh dari 192.168.22.1 > 1.22.168.192, tapi hanya sampe oktet ke-tiga ajah, "in-addr.arpa" jan di
-                    hapus, jadi contoh 22.168.192.in-addr.arpa. Arahin juga bagian "file" nya ke file configurasi db.domain sama db.ip kalian
-                  </p>
-                </div>
-                <p class="">setelah itu kita restart Network sama bind9 services nya dengan command <span class="italic font-semibold">systemctl restart networking bind9</span></p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-white">4. test from client (windows localhost/laptop kita)</h2>
-                <p class="">
-                  caranya adalah, kita buat laptop kita dengan debian serevr saling terhubung/satu network, pertama kita masuk
-                  <span class="italic font-semibold"
-                    >CONTROL PANEL > NETWORK AND INTERNET > NETWORK AND SHARING CENTER > CHANGE ADAPTER SETTING > VIRTUALBOX HOST-ONLY-ETHERNET > PROPERTIES > INTERNET PROTOCOL VERSION 4 (TCP/IPV4) PROPERTIES</span
-                  >
-                </p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/control panel.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">
-                    Di bagian ip address isi address dengan network yang sama dengan debian server jika debian 192.168.22.1 maka isi ip adddress dengan 192.168.22.2, isi referred DNS server dengan ip debian dns server
-                  </p>
-                </div>
-                <p class="">
-                  setelah itu kita test ping dari client untuk menguji apakah windows(laptop kita) terhubung dengan client untuk test ping kita buka cmd, lalu masukan command<span class="italic font-semibold"
-                    >ping (ip target/ip debian server)</span
-                  >
-                  jika sudah terhubung akan seperti ini :
-                </p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/testPING.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Yey berhasil :3</p>
-                </div>
-                <p class="">
-                  setelah test ping dan terbukti berhasil, selanjut nya kita akan menguji apakah dns server kita telah berhasil terconfigurasi dengan bail, comandnya dengan menggunakan
-                  <span class="italic font-semibold">nslookup (contohdomain.com/ip address server debian)</span>
-                </p>
-                <div class="-ml-12 -mt-12 p-12 mt-[1px] lg:top-4 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-                  <img src="/assets/img/Kelompok dns/testNSLOOOKUP.jpg" alt="" class="h-[250px] w-auto overflow-hidden rounded-md" />
-                  <p class="italic text-sm">Jika sudah seperti ini tanda na sudah berhasil</p>
-                </div>
+                
 
                 <p class=""><span class="italic font-semibold">TERIMAKASIH TELAH MEMBACA semoga berhasil~</span></p>
               </div>

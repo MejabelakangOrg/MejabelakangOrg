@@ -1,56 +1,86 @@
+// let form = document.getElementById("form");
+// let input = document.getElementById("input");
+// let msg = document.getElementById("msg");
+// let posts = document.getElementById("posts");
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   console.log("button clicked");
+
+//   formValidation();
+// });
+
+// let formValidation = () => {
+//    if (input.value === "") {
+//      msg.innerHTML = "Post cannot be blank";
+//      console.log("failure");
+//    } else {
+//      console.log("successs");
+//      msg.innerHTML = "";
+//    }
+// };
+
+// let data ={}
+
+// let acceptData = () => {
+//   data["text"] = input.value;
+//   console.log(data);
+// };
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all dropdown toggle buttons
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", () => {
-      // Find the next sibling element which is the dropdown menu
-      const dropdownMenu = toggle.nextElementSibling;
-
-      // Toggle the 'hidden' class to show or hide the dropdown menu
-      if (dropdownMenu.classList.contains("hidden")) {
-        // Hide any open dropdown menus before showing the new one
-        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-          menu.classList.add("hidden");
-        });
-
-        dropdownMenu.classList.remove("hidden");
-      } else {
-        dropdownMenu.classList.add("hidden");
-      }
-    });
-  });
-
-  // Optional: Clicking outside of an open dropdown menu closes it
-  window.addEventListener("click", (event) => {
-    if (!event.target.matches(".dropdown-toggle")) {
-      document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-        if (!menu.contains(event.target)) {
-          menu.classList.add("hidden");
-        }
-      });
-    }
-  });
-});
-
-// Mobile menu toggle
+  let form = document.getElementById("form");
+  let input = document.getElementById("input");
+  let msg = document.getElementById("msg");
+  let posts = document.getElementById("posts");
  
-document.addEventListener("DOMContentLoaded", () => {
-     const mobileMenuButton = document.querySelector(".mobile-menu-button");
-     const mobileMenu = document.querySelector(".navigation-menu");
 
-     mobileMenuButton.addEventListener("click", () => {
-       mobileMenu.classList.toggle("hidden");
-     });
+
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("button clicked");
+
+    formValidation();
+  });
+
+  let formValidation = () => {
+    if (input.value === "") {
+      msg.innerHTML = "Post cannot be blank";
+      console.log("failure");
+    } else {
+      console.log("success");
+      msg.innerHTML = "";
+      acceptData();
+    }
+  };
+
+  let data = {};
+
+  let acceptData = () => {
+    data["text"] = input.value;
+    console.log(data);
+    createPost();
+  };
+
+let createPost = () => {
+  posts.innerHTML += `
+  <div>
+    <p>${data.text}</p>
+    <span class="options">
+      <i onClick="editPost(this)" class="fas fa-edit"></i>
+      <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+    </span>
+  </div>
+  `;
+  input.value = "";
+};
+let editPost = (e) => {
+  input.value = e.parentElement.previousElementSibling.innerHTML;
+  e.parentElement.parentElement.remove();
+};
 
 
 });
+    
 
 
-let keywoard = [
-  'html',
-  'dns',
-  'server',
-  'test',
-
-];
