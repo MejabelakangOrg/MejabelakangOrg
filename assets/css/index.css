@@ -30,3 +30,11 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #ffffff; /* Warna thumb saat di-hover */
 }
+
+
+.pinguin_logo{
+  filter: saturate(0);
+}
+.pinguin_logo:hover{
+  filter:saturate(1);
+}
