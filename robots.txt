@@ -9,7 +9,6 @@ Disallow: /script/js/index.js
 Disallow: /assets/img/
 Disallow: /assets/test/
 Disallow: /tailwind.config.js
-Disallow: /sitemap.xml
 Disallow: /tailwind/
 # Disallow: /temp/ -> melarang akses ke direktori /temp/
 Disallow: /temp/
@@ -17,6 +16,7 @@ Disallow: /temp/
 # Allow: /public/ -> mengizinkan akses ke direktori /public/
 Allow: /assets/html/
 allow: /index.html
+allow: /sitemap.xml
 
 # Sitemap: URL ke file sitemap Anda
 Sitemap: https://mejabelakang-org.vercel.app/sitemap.xml
