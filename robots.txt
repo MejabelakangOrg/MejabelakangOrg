@@ -15,8 +15,8 @@ Disallow: /temp/
 
 # Allow: /public/ -> mengizinkan akses ke direktori /public/
 Allow: /assets/html/
-allow: /index.html
-allow: /sitemap.xml
+Allow: /index.html
+Allow: /sitemap.xml
 
 # Sitemap: URL ke file sitemap Anda
 Sitemap: https://mejabelakang-org.vercel.app/sitemap.xml

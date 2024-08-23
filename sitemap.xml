@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <url>
+    <loc>https://mejabelakang-org.vercel.app/#</loc>
+    <lastmod>2024-06-04</lastmod>
 
-<url>
-  <loc>https://mejabelakang-org.vercel.app/#</loc>
-  <lastmod>2024-06-12</lastmod>
-</url>
-<url>
-  <loc>https://mejabelakang-org.vercel.app/assets/html/docs.html</loc>
-  <lastmod>2024-06-12</lastmod>
-</url>
-<url>
-  <loc>https://mejabelakang-org.vercel.app/index.html</loc>
-  <lastmod>2024-06-12</lastmod>
-</url>
-<url>
-  <loc>https://mejabelakang-org.vercel.app/assets/html/DNS_TUTOR.html</loc>
-  <lastmod>2024-06-12</lastmod>
-</url>
-<url>
-  <loc>https://mejabelakang-org.vercel.app/assets/html/Install_debian_tutor.html</loc>
-  <lastmod>2024-06-12</lastmod>
-</url>
+    <loc>https://mejabelakang-org.vercel.app/assets/html/DNS_TUTOR.html<loc/>
+    <lastmod>2024-06-04</lastmod>
 
+    <loc>https://mejabelakang-org.vercel.app/assets/html/custom_terminal_tutor.html<loc/>
+    <lastmod>2024-06-04</lastmod>
+    
+    <loc>https://mejabelakang-org.vercel.app/assets/html/Install_debian_tutor.html<loc/>
+    <lastmod>2024-06-04</lastmod>
 
+  </url>
 </urlset>
